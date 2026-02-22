@@ -8,13 +8,14 @@ Most of the Atom user and developer documentation is contained in the [Atom Flig
 
 Instructions for building Atom on various platforms from source.
 
-* Moved to [the Flight Manual](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/)
-    * Linux
-    * macOS
-    * Windows
+* [Build Instructions for Ralph Wiggum Loop Fork](./build-instructions/BUILD.md) - Specific instructions for this fork
+* [Windows](./build-instructions/windows.md) - Original Atom Windows build instructions
+* [macOS](./build-instructions/macOS.md) - Original Atom macOS build instructions
+* [Linux](./build-instructions/linux.md) - Original Atom Linux build instructions
+* [Build Status](./build-instructions/build-status.md) - CI/CD build status
 
 ## Other documentation
 
 [Native Profiling on macOS](./native-profiling.md)
 
-The other documentation that was listed here previously has been moved to [the Flight Manual](https://flight-manual.atom.io).
+The other documentation that was listed here previously has been moved to [the Atom Flight Manual](https://flight-manual.atom.io).

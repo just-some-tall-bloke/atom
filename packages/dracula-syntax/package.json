@@ -1,0 +1,17 @@
+{
+  "name": "dracula-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A dark syntax theme based on Dracula",
+  "keywords": [
+    "dark",
+    "purple",
+    "dracula",
+    "syntax"
+  ],
+  "repository": "https://github.com/atom/atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
