@@ -107,10 +107,12 @@ const EXCLUDE_REGEXPS_SOURCES = [
     'spec' +
     escapeRegExp(path.sep),
 
-  // babel-core spec
+  // @babel/core spec
   'node_modules' +
     escapeRegExp(path.sep) +
-    'babel-core' +
+    '@babel' +
+    escapeRegExp(path.sep) +
+    'core' +
     escapeRegExp(path.sep) +
     'lib' +
     escapeRegExp(path.sep) +

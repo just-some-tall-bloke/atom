@@ -1,7 +1,9 @@
 {
-  "breakConfig": true,
   "sourceMap": "inline",
-  "blacklist": ["es6.forOf", "useStrict"],
-  "optional": ["asyncToGenerator"],
-  "stage": 0
+  "presets": ["@babel/preset-env", "@babel/preset-flow"],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-transform-async-to-generator",
+    "@babel/plugin-transform-runtime"
+  ]
 }

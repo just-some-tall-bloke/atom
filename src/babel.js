@@ -31,7 +31,7 @@ exports.shouldCompile = function(sourceCode) {
 
 exports.getCachePath = function(sourceCode) {
   if (babelVersionDirectory == null) {
-    const babelVersion = require('babel-core/package.json').version;
+    const babelVersion = require('@babel/core/package.json').version;
     babelVersionDirectory = path.join(
       'js',
       'babel',
@@ -50,11 +50,7 @@ exports.getCachePath = function(sourceCode) {
 
 exports.compile = function(sourceCode, filePath) {
   if (!babel) {
-    babel = require('babel-core');
-    const Logger = require('babel-core/lib/transformation/file/logger');
-    const noop = function() {};
-    Logger.prototype.debug = noop;
-    Logger.prototype.verbose = noop;
+    babel = require('@babel/core');
   }
 
   if (process.platform === 'win32') {
@@ -65,13 +61,13 @@ exports.compile = function(sourceCode, filePath) {
   for (const key in defaultOptions) {
     options[key] = defaultOptions[key];
   }
-  return babel.transform(sourceCode, options).code;
+  return babel.transformSync(sourceCode, options).code;
 };
 
 function createVersionAndOptionsDigest(version, options) {
   return crypto
     .createHash('sha1')
-    .update('babel-core', 'utf8')
+    .update('@babel/core', 'utf8')
     .update('\0', 'utf8')
     .update(version, 'utf8')
     .update('\0', 'utf8')

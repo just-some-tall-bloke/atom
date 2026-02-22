@@ -20,3 +20,5 @@ spec/fixtures/evil-files/
 out/
 /electron/
 /.ralph
+IMPROVEMENTS.md
+PROJECT_DESCRIPTION.md
