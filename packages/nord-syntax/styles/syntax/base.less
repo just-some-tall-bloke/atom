@@ -1,0 +1,202 @@
+// Base syntax styles -----------------------------------
+
+// Comments
+.syntax--comment {
+  color: #616e88;
+  font-style: italic;
+
+  .syntax--markup {
+    &.syntax--link {
+      color: #616e88;
+    }
+  }
+}
+
+// Constants
+.syntax--constant {
+  color: #d8dee9;
+
+  &.syntax--character {
+    &.syntax--escape {
+      color: #d8dee9;
+    }
+  }
+
+  &.syntax--numeric {
+    color: #b48ead;
+  }
+
+  &.syntax--other {
+    &.syntax--symbol {
+      color: #d8dee9;
+    }
+  }
+}
+
+// Entities
+.syntax--entity {
+  color: #8fbcbb;
+
+  &.syntax--definition {
+    &.syntax--variable {
+      color: #8fbcbb;
+    }
+  }
+
+  &.syntax--name {
+    &.syntax--function {
+      color: #88c0d0;
+    }
+
+    &.syntax--type {
+      color: #8fbcbb;
+    }
+  }
+
+  &.syntax--other {
+    &.syntax--inherited-class {
+      color: #8fbcbb;
+    }
+  }
+
+  &.syntax--section {
+    color: #81a1c1;
+  }
+}
+
+.syntax--variable {
+  color: #d8dee9;
+
+  &.syntax--parameter {
+    color: #d8dee9;
+
+    &.syntax--function {
+      color: #ebcb8b;
+    }
+  }
+}
+
+.syntax--invalid {
+  &.syntax--illegal {
+    color: #bf616a;
+    background-color: rgba(191, 97, 106, 0.1);
+
+    &::before {
+      content: "^";
+    }
+  }
+
+  &.syntax--deprecated {
+    color: #d8dee9;
+    text-decoration: underline;
+  }
+}
+
+// Keywords
+.syntax--keyword {
+  color: #81a1c1;
+
+  &.syntax--operator {
+    color: #d8dee9;
+  }
+
+  &.syntax--other {
+    color: #81a1c1;
+  }
+}
+
+// Markup
+.syntax--markup {
+  color: #d8dee9;
+
+  &.syntax--bold {
+    color: #d8dee9;
+    font-weight: bold;
+  }
+
+  &.syntax--changed {
+    color: #81a1c1;
+  }
+
+  &.syntax--deleted {
+    color: #bf616a;
+  }
+
+  &.syntax--heading {
+    color: #8fbcbb;
+    font-weight: bold;
+  }
+
+  &.syntax--italic {
+    color: #81a1c1;
+    font-style: italic;
+  }
+
+  &.syntax--link {
+    color: #5e81ac;
+
+    &.syntax--url {
+      color: #5e81ac;
+
+      &:hover {
+        color: #81a1c1;
+      }
+    }
+  }
+
+  &.syntax--quote {
+    color: #a3be8c;
+    font-style: italic;
+  }
+}
+
+// Storage
+.syntax--storage {
+  color: #81a1c1;
+
+  &.syntax--type {
+    color: #8fbcbb;
+
+    &.syntax--class {
+      color: #8fbcbb;
+    }
+  }
+}
+
+// Strings
+.syntax--string {
+  color: #a3be8c;
+
+  &.syntax--quoted {
+    color: #a3be8c;
+  }
+
+  &.syntax--unquoted {
+    color: #a3be8c;
+  }
+
+  &.syntax--interpolated {
+    color: #a3be8c;
+  }
+}
+
+// Support
+.syntax--support {
+  color: #d8dee9;
+
+  &.syntax--function {
+    color: #88c0d0;
+  }
+
+  &.syntax--type {
+    color: #8fbcbb;
+  }
+
+  &.syntax--class {
+    color: #8fbcbb;
+  }
+
+  &.syntax--variable {
+    color: #d8dee9;
+  }
+}

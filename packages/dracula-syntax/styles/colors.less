@@ -1,0 +1,29 @@
+// Config -----------------------------------
+@syntax-hue:          261;
+@syntax-saturation:   77%;
+@syntax-brightness:   28%;
+
+
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 31%, 86%); // default text
+@mono-2: hsl(@syntax-hue, 25%, 70%);
+@mono-3: hsl(@syntax-hue, 20%, 50%);
+
+// Colors -----------------------------------
+@hue-1:   hsl(261, 77%, 78%); // <-purple
+@hue-2:   hsl(191, 97%, 77%); // <-cyan
+@hue-3:   hsl(326, 100%, 71%); // <-pink
+@hue-4:   hsl(95,  68%, 69%); // <-green
+
+@hue-5:   hsl( 24, 75%, 59%); // <-orange
+@hue-5-2: hsl(  0, 80%, 65%); // <-red
+
+@hue-6:   hsl(50,  95%, 78%); // <-yellow
+
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@hue-3, 100%, 78%);

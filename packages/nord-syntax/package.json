@@ -1,0 +1,17 @@
+{
+  "name": "nord-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A arctic, north-bluish clean syntax theme",
+  "keywords": [
+    "nord",
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "repository": "https://github.com/atom/atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

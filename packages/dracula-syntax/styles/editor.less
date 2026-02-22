@@ -1,0 +1,173 @@
+// Editor styling -----------------------------------
+
+@syntax-cursor-line: hsla(@syntax-hue, 100%, 80%, .04);
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+.editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .cursor-line {
+  background-color: @syntax-cursor-line;
+}
+
+.editor .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+.editor .find-and-replace .replace .region {
+  background-color: @syntax-result-marker-color;
+}
+
+.editor .find-and-replace .replace.current .region {
+  background-color: @syntax-result-marker-color-selected;
+}
+
+.editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+.editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+.editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+// Default syntax styles -----------------------------------
+
+.syntax--comment {
+  color: @mono-3;
+  font-style: italic;
+}
+
+.syntax--keyword {
+  color: @hue-3;
+
+  &.syntax--control {
+    color: @hue-3;
+  }
+
+  &.syntax--operator {
+    color: @mono-1;
+  }
+
+  &.syntax--other {
+    color: @hue-3;
+  }
+}
+
+.syntax--storage {
+  color: @hue-3;
+}
+
+.syntax--constant {
+  color: @hue-5-2;
+
+  &.syntax--character {
+    color: @hue-5-2;
+  }
+
+  &.syntax--numeric {
+    color: @hue-6;
+  }
+}
+
+.syntax--variable {
+  color: @hue-5;
+
+  &.syntax--parameter {
+    color: @hue-5;
+  }
+}
+
+.syntax--string {
+  color: @hue-4;
+}
+
+.syntax--string.syntax--quoted {
+  &.syntax--single {
+    color: @hue-4;
+  }
+
+  &.syntax--double {
+    color: @hue-4;
+  }
+
+  &.syntax--template {
+    color: @hue-4;
+  }
+}
+
+.syntax--support {
+  color: @hue-2;
+
+  &.syntax--function {
+    color: @hue-2;
+  }
+
+  &.syntax--class {
+    color: @hue-1;
+  }
+
+  &.syntax--type {
+    color: @hue-1;
+  }
+
+  &.syntax--property {
+    color: @syntax-fg;
+  }
+}
+
+.syntax--entity {
+  color: @syntax-fg;
+
+  &.syntax--module {
+    color: @hue-1;
+  }
+
+  &.syntax--class {
+    color: @hue-1;
+  }
+
+  &.syntax--function {
+    color: @hue-2;
+  }
+
+  &.syntax--method {
+    color: @hue-2;
+  }
+
+  &.syntax--namespace {
+    color: @hue-5;
+  }
+}
+
+.syntax--tag {
+  color: @hue-3;
+}
+
+.syntax--attribute {
+  color: @hue-5;
+}
+
+.syntax--illegal {
+  color: @syntax-illegal-fg;
+  background-color: @syntax-illegal-bg;
+}
+
+.syntax--deprecated {
+  color: @syntax-deprecated-fg;
+  background-color: @syntax-deprecated-bg;
+}
